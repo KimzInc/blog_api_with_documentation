@@ -1,13 +1,10 @@
-.venv/
 # Python
 *.pyc
 *~
 __pycache__
 
 # Env
-.env
-myvenv/
-venv/
+.venv/
 
 # Database
 db.sqlite3
