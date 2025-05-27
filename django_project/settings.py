@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from environs import Env
 
 import warnings
 
@@ -182,3 +183,6 @@ warnings.filterwarnings(
     category=UserWarning,
     module='dj_rest_auth'
 )
+
+env = Env()
+env.read_env()
