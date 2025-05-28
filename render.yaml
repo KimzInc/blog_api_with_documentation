@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: kimzaf-blogapi
+    env: python
+    region: us-east # or your preferred region
+    plan: free # or your chosen plan
+    buildCommand: ./build.sh
+    startCommand: gunicorn django_project.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: SECRET_KEY
+        sync: false # Set this in Render dashboard
+      - key: DATABASE_URL
+        sync: false # Set this in Render dashboard
+      - key: DEBUG
+        value: False
