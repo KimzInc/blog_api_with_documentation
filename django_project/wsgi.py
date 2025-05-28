@@ -11,7 +11,7 @@ import os
 import sys
 
 os.environ['SECRET_KEY'] = 'QKRf5WEpV5H5HzLPzF8kwqCzWl0aFkkfSU6IBvrt1T0'
-os.environ['DEBUG'] = 'False'
+# os.environ['DEBUG'] = 'False'
 os.environ['DATABASE_URL'] = 'mysql://Kimzaf:cHEZ%40na%4086@Kimzaf.mysql.pythonanywhere-services.com/Kimzaf$bloapidb'
 
 path = '/home/Kimzaf/kimzaf.pythonanywhere.com'
